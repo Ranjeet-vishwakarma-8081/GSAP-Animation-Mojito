@@ -22,6 +22,7 @@ body {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
+/* Custom utility classes */
 
 @utility flex-center {
   @apply flex justify-center items-center;
@@ -58,6 +59,7 @@ body {
   mask-size: 50%;
 }
 
+/* Auto applied style */
 @layer components {
   main {
     @apply w-full overflow-x-hidden;
