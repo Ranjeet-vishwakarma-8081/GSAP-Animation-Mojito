@@ -97,7 +97,7 @@ const Menu = () => {
       </nav>
 
       <div className="content">
-        <div className="arrows">
+        <div className="arrows md:pl-5">
           <button
             className="text-left"
             onClick={() => goToSlide(currentIndex - 1)}
@@ -119,13 +119,13 @@ const Menu = () => {
           <img src={currentCocktail.image} className="object-contain" />
         </div>
 
-        <div className="recipe">
+        <div className="recipe xl:pl-5">
           <div ref={contentRef} className="info">
             <p>Recipe for:</p>
             <p id="title">{currentCocktail.name}</p>
           </div>
 
-          <div className="details">
+          <div className="details 2xl:pl-8">
             <h2>{currentCocktail.title}</h2>
             <p>{currentCocktail.description}</p>
           </div>
