@@ -75,15 +75,15 @@ const WhatsAppWidget = () => {
       {/* Popup */}
       {open && (
         <div
-          className="fixed bottom-24 right-6 z-50 md:w-80 w-72
+          className="fixed bottom-24 right-6 z-50 w-72
           animate-in fade-in slide-in-from-bottom-4 duration-300"
         >
           <div
-            className="rounded-2xl bg-[#0f1a17] text-[#f5e9c8]
-          shadow-2xl border border-green-900"
+            className="rounded-2xl bg-black text-[#f5e9c8]
+          shadow-2xl border border-[#0f1f17]"
           >
             {/* Header */}
-            <div className="md:px-5 md:py-4 px-3 py-2 border-b border-green-800">
+            <div className="px-3 py-2 border-b border-[#0f1f17]">
               <h3 className="text-lg font-semibold tracking-wide">
                 Cobbler & Crew
               </h3>
@@ -102,14 +102,14 @@ const WhatsAppWidget = () => {
             </div>
 
             {/* Body */}
-            <div className="md:px-5 md:py-4 px-3 py-2  text-sm leading-relaxed text-[#e6dcc3]">
+            <div className="px-3 py-2  text-sm leading-relaxed text-[#e6dcc3]">
               Planning a visit, event, or custom drink?
               <br />
               Chat directly with our crew on WhatsApp.
             </div>
 
             {/* CTA */}
-            <div className="md:px-5 px-3 md:py-4 py-3">
+            <div className="p-3">
               <a
                 href={whatsappUrl}
                 target="_blank"
