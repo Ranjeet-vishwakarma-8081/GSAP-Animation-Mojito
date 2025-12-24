@@ -9,6 +9,9 @@ const Contact = () => {
     const init = async () => {
       try {
         await document.fonts.ready;
+
+        // Reveal text ONLY after fonts are loaded
+        gsap.set(["#contact h2"], { visibility: "visible" });
       } catch (error) {
         console.log("Error occurred -", error);
       }
@@ -68,7 +71,7 @@ const Contact = () => {
       />
 
       <div className="content">
-        <h2>Where to Find Us</h2>
+        <h2 className="invisible">Where to Find Us</h2>
 
         <div>
           <h3>Visit Our Bar</h3>

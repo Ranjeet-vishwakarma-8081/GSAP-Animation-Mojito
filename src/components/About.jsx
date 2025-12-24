@@ -7,6 +7,9 @@ const About = () => {
     const init = async () => {
       try {
         await document.fonts.ready;
+
+        // Reveal text ONLY after fonts are loaded
+        gsap.set(["#about h2"], { visibility: "visible" });
       } catch (error) {
         console.log("Error occurred -", error);
       }
@@ -48,7 +51,7 @@ const About = () => {
         <div className="content">
           <div className="md:col-span-8">
             <p className="badge">Best Cocktails</p>
-            <h2>
+            <h2 className="invisible">
               Where every detail matters <span className="">-</span>
               from muddle to garnish
             </h2>
